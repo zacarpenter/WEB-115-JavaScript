@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="exam3-part2_ZCarpenter.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+<body>
+
+<div class="calculator">
+  <table class="tableOne"> 
+    <div class="display">
+      <tr>
+        <td><input type="text" id="displayArea" disabled /></td>
+      </tr>
+    </div>
+  </table>
+  
+  <table class="tableTwo">
+      <!--7 8 9 <- -->
+      <tr class="numInput">
+        <td><button type="button" class="calcBtn" value="7" id="seven">7</button></td>
+        <td><button type="button" class="calcBtn" value="8" id="eight">8</button></td>
+        <td><button type="button" class="calcBtn" value="9" id="nine">9</button></td>
+        <td><button type="button" class="material-icons" id="backspace">&#xe14a;</button></td>
+      </tr>
+        
+      <!--4 5 6 - -->
+      <tr class="numInput">
+        <td><button type="button" class="calcBtn" value="4" id="four">4</button></td>
+        <td><button type="button" class="calcBtn" value="5" id="five">5</button></td>
+        <td><button type="button" class="calcBtn" value="6" id="six">6</button></td>
+        <td><button type="button" class="operator" value="-" id="subtract">-</button></td>
+      </tr>
+      
+      <!--1 2 3 + -->
+      <tr class="numInput">
+        <td><button type="button" class="calcBtn" value="1" id="one">1</button></td>
+        <td><button type="button" class="calcBtn" value="2" id="two">2</button></td>
+        <td><button type="button" class="calcBtn" value="3" id="three">3</button></td>
+        <td><button type="button" class="operator" value="+" id="add">+</button></td>
+      </tr>
+      
+      <!--* 0 / = -->
+      <tr class="numInput">
+        <td><button type="button" class="operator" value="*" id="multiply">*</button></td>
+        <td><button type="button" class="calcBtn" value="0" id="zero">0</button></td>
+        <td><button type="button" class="operator" value="/" id="divide">/</button></td>
+        <td><button type="button" value="=" id="calculate">=</button></td>
+      </tr>
+
+  </table>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type='text/javascript' src='exam3-part2_ZCarpenter.js'></script>
+</body>
+</html>

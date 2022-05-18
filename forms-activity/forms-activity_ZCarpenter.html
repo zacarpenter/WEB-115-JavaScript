@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>Forms</title>
+    <link rel="stylesheet" href="forms-activity_ZCarpenter.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="purchaseTrackerForm" method="post">
+
+        <div class="column-1" id="main">
+          <fieldset>
+            <legend>Enter a Purchase</legend>
+
+            <label for="purchaseName">Name:</label>
+            <input type="text" id="purchaserName" name="purchaserName" required/>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required/>
+
+            
+            <label for="cost">Purchase Cost:</label>
+            <input type="number" name="cost" min="0" max="9999" step="0.01" id="cost" placeholder="$45.94" required/>
+           
+
+            <fieldset>
+              <legend for="supplier">Supplier</legend>
+              <br/>
+
+              <label for="homeDepot">
+                <input type="radio" id="homeDepot" name="supplier" value="Home Depot" required />
+                Home Depot
+              </label>
+            
+              <label for="target">
+                <input type="radio" id="target" name="supplier"  value="Target" />
+                Target
+              </label>
+            
+              <label for="officeMax">
+                <input type="radio" id="officeMax" name="supplier" value="Office Max" />
+                Office Max
+              </label>
+            
+
+              <label for="notes">Notes:</label>
+              <textarea name="notes" id="notes" rows="10" cols="20" placeholder="Enter puchase notes. (Optional)" maxlength="50"></textarea>
+          </fieldset>
+
+            <br/>
+            <br/>
+
+            <input type="submit" value="Submit Purchase" />
+            <input type="reset" value="Reset Form" />
+
+          </fieldset>
+        </div><!-- .column-1 -->
+      </form>
+      <div class="column-2" id="resultsTable">
+        <table >
+          <thead>
+            <th>Purchaser Name</th>
+            <th>Email</th>
+            <th>Purchase Cost</th>
+            <th>Purchase Supplier</th>
+            <th>Purchase Notes</th>
+          </thead>
+          <tbody id="output">
+          </tbody>
+        </table>
+      </div> <!-- .column-2 -->
+    </div><!-- .container -->
+    <script type='text/javascript' src='forms-activity_ZCarpenter.js'></script>
+  </body>
+</html>

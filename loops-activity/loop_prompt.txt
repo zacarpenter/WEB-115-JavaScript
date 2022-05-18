@@ -1,0 +1,22 @@
+Although for, while, and do...while can be used interchangeably in nearly every scenario, they do have subtle differences. For this prompt I am looking for you to provide the following for each loop type:
+
+
+Describe an advantage or why someone would choose this loop type over another. Some things to consider and ask yourself:
+When would you use a for loop over a while loop? When would you use a while loop over a for loop? When would you use a do...while loop over a while loop?
+
+For loops are useful when you know the number of iterations a loop will go through. A for loop is a pretest loop, meaning it tests before iterating.
+A while loop can be used when you don't know the number of iterations a loop could go through. A while loop is also a pretest loop and will test before iterating.
+A do...while loop is a posttest loop, meaning it will iterate at least once and test the loop expression after. Do...while loop is useful if you want to iterate at least once and don't know how many times you want to continue iterating.
+
+
+Give an example that fits the loop type's optimal use case (short answer, not code). Example scenario for a for loop (do not copy, be creative):
+Given an array of 100 numbers,  iterate over each element/index and calculate the sum.
+
+For loop example:
+Count the number of characters in a file. You can loop through each one and add to the total each time.
+
+While loop example:
+Stopwatch - while the stopwatch is running, continue to increment the stopwatch until the user presses stop.
+
+Do...While loop example:
+User presses the accelerate button, the car continues to accelerate until the user stops press the button or presses the brake.

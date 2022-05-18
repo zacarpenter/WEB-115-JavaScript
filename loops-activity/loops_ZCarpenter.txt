@@ -1,0 +1,33 @@
+var presentations = [`Security 101`, `Philanthropy`];
+
+// YOUR CODE STARTS HERE
+
+// prompt for the first attendee
+var getAttendees;
+var attendees = [];
+
+//var clonedAttendees = attendees.slice();
+
+for (x = 0; x < presentations.length; x++) {
+    while (true) {
+        getAttendees = window.prompt(`Enter an attendee name for ${presentations[x]}: `);
+
+        if (getAttendees != ''){
+            attendees.push(getAttendees);
+        }
+        else {
+            break;
+        }
+    }
+}
+
+
+var displayAttendees = window.prompt(`Enter a presentation name to list attendees: `);
+
+// display the attendess for the presentation
+if (presentations.includes(displayAttendees)) {
+    window.alert(attendees.toString());
+}
+
+
+// YOUR CODE ENDS HERE

@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title>Shopping List</title>
+  </head>
+
+  <style>
+    body {
+      background-color: grey;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+    }
+    li {
+      list-style: none;
+      padding: 5px;
+    }
+    .addButton {
+      display: flex;
+      padding: 0.2em 1.45em;
+      margin-left: auto;
+      margin-right: auto;
+      border: 0.15em solid black;
+      box-sizing: border-box;
+      text-decoration: none;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: 900;
+      font-size: large;
+      background-color: #23ac8a;
+      color: white;
+      text-align: center;
+    }
+    .deleteButton {
+      display: inline-block;
+      padding: 0.2em 1.45em;
+      margin: 0.1em;
+      border: 0.15em solid #000000;
+      box-sizing: border-box;
+      text-decoration: none;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: large;
+      font-weight: 900;
+      background-color: red;
+      color: white;
+      text-align: center;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+    }
+    input {
+      display: inline-block;
+      padding: 0.2em 1.45em;
+      margin: 0.1em;
+      border: 0.15em solid #CCCCCC;
+      box-sizing: border-box;
+      text-decoration: none;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: 500;
+      font-size: large;
+      background-color: #ebebeb;
+      color: black;
+      position: relative;
+      text-align: left;
+    }
+
+  </style>
+<body>
+  <h1>Shopping List</h1>
+
+  <ul id='shoppingList'>
+  </ul>
+
+  <input type="button" class="addButton" value="Add Item">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+  <script type='text/javascript' src='events-activity_JQuery_ZCarpenter.js'></script>
+</body>
+</html>
